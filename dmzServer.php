@@ -4,21 +4,6 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
-//features
-function doNutritionalInfo($request)
-{
-	//Get nutritional information from spoonacular
-	return 0;
-}
-
-function doFavIngredients($request)
-{
-	//Get recipe according to favorite ingredients from spoonacular
-	return 0;
-}
-
-
-
 function requestProcessor($request)
 {
   echo "received request".PHP_EOL;
@@ -30,7 +15,7 @@ function requestProcessor($request)
   switch ($request['feature'])
   {
     case "1":
-      //call feature
+      //feature code
       return $request; //return to front end as array
     case "2":
       return $request;
